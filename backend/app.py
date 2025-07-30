@@ -13,7 +13,7 @@ app.add_middleware(
     CORSMiddleware,
     # allow_origins=["http://localhost:3000"],  # Change if your frontend runs elsewhere
     # allow_origins=["https://chatbotagent-sooty.vercel.app"],  # running on vercel
-    allow_origins=["https://chatbotagent-sooty.vercel.app","http://localhost:3000"],  # running on vercel and localhost
+    allow_origins=["https://chatbot-agent-five.vercel.app","http://localhost:3000"],  # running on vercel and localhost
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
