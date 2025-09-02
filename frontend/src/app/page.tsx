@@ -46,6 +46,14 @@ export default function Home() {
               AI Advanced Chat Bot Agent
             </Button>
           </Link>
+          <Link href="/floating-ai-bot">
+            <Button
+              variant="default"
+              className="w-full bg-blue-500 hover:bg-blue-600 text-white"
+            >
+              Floating AI Chat Bot Agent
+            </Button>
+          </Link>
         </div>
       </Card>
     </div>
