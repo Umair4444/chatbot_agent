@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Chatbot Agents
 
-## Getting Started
+Chatbot Agents is a versatile AI chatbot platform hosted on Vercel, designed to provide users with a range of interactive AI experiences. Whether you're seeking motivational quotes, exploring side hustle ideas, or engaging in dynamic conversations with a memory-enabled AI agent, this platform offers it all.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Motivational Quotes**: Get inspired with a random money quote.
+- **Side Hustle Ideas**: Discover a new side hustle idea to kickstart your entrepreneurial journey.
+- **AI Memory Chat Bot Agent**: Engage in conversations with an AI that remembers your previous interactions.
+- **AI Advanced Chat Bot Agent**: Experience a more sophisticated AI chatbot with advanced capabilities.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python 3.7+.
+- **Vercel**: A platform for frontend frameworks and static sites, built to integrate with headless content, commerce, or databases.
+- **Python**: The programming language used to develop the backend services.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🌐 Deployment
 
-## Learn More
+You can access the live application here: [Chatbot Agent](https://chatbot-agent-five.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Setup Instructions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run the project locally:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the repository:
+   git clone https://github.com/yourusername/chatbot-agent-five.git
+   cd chatbot-agent
+   Set up a virtual environment:
 
-## Deploy on Vercel
+python3 -m venv venv
+source venv/bin/activate # On Windows, use `venv\Scripts\activate`
+Install dependencies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+pip install -r requirements.txt
+Run the application:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+uvicorn app:app --reload
+Access the application at http://127.0.0.1:8000/.
+
+🧪 API Endpoints
+GET /side_hustles: Returns a random side hustle idea.
+
+GET /money_quotes: Provides a random motivational money quote.
+
+GET /fakeinfo: Shares a fictional biography for fun.
+
+POST /api/chat: Engage in a conversation with the AI chatbot.
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🤝 Contributing
+Contributions are welcome! Please fork the repository, create a new branch, make your changes, and submit a pull request. Ensure that your code adheres to the existing style and includes appropriate tests.
