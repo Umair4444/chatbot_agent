@@ -10,7 +10,7 @@ export default function Quotes() {
   const getHustle = async () => {
     // const res = await fetch("http://127.0.0.1:8000/side_hustles?apikey=1234");
     const res = await fetch(
-      "https://chatbot-agentbackend.vercel.app/side_hustles?apikey=1234"
+      "https://chatbot-agent-backend.vercel.app/side_hustles?apikey=1234"
     );
     const data = await res.json();
     console.log(data);
@@ -20,7 +20,7 @@ export default function Quotes() {
   const getQuote = async () => {
     // const res = await fetch("http://127.0.0.1:8000/money_quotes?apikey=1234");
     const res = await fetch(
-      "https://chatbot-agentbackend.vercel.app/money_quotes?apikey=1234"
+      "https://chatbot-agent-backend.vercel.app/money_quotes?apikey=1234"
     );
     const data = await res.json();
     setQuote(data.money_quotes);
@@ -28,7 +28,7 @@ export default function Quotes() {
 
   const getFakeInfo = async () => {
     // const res = await fetch("http://127.0.0.1:8000/fakeinfo");
-    const res = await fetch("https://chatbot-agentbackend.vercel.app/fakeinfo");
+    const res = await fetch("https://chatbot-agent-backend.vercel.app/fakeinfo");
     const data = await res.json();
     setBio(data.fictional_bio);
   };

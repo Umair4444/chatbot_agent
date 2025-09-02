@@ -15,7 +15,7 @@ export default function Home() {
   const fetchMessages = async () => {
     // const res = await fetch("http://127.0.0.1:8000/api/messages");
     const res = await fetch(
-      "https://chatbot-agentbackend.vercel.app/api/messages"
+      "https://chatbot-agent-backend.vercel.app/api/messages"
     );
     const data = await res.json();
     setMessages(data.messages);
@@ -35,7 +35,7 @@ export default function Home() {
     try {
       // const res = await fetch("http://127.0.0.1:8000/api/chat", {
       const res = await fetch(
-        "https://chatbot-agentbackend.vercel.app/api/chat",
+        "https://chatbot-agent-backend.vercel.app/api/chat",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
