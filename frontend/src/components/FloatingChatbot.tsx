@@ -235,7 +235,7 @@ export default function FloatingChatbot() {
                   <div className="text-center py-8">
                     <Bot className="h-12 w-12 text-primary/60 mx-auto mb-3" />
                     <p className="text-sm text-muted-foreground">
-                      Hi! I'm your AI assistant. How can I help you today?
+                      Hi! I&apos;m your AI assistant. How can I help you today?
                     </p>
                   </div>
                 )}

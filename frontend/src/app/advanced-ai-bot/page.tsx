@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -43,8 +43,12 @@ export default function AIBotPage() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const currentSession = chatSessions.find((s) => s.id === currentSessionId);
-  const messages = currentSession?.messages ?? [];
-
+  // Use useMemo to avoid changing reference each render
+  const messages = useMemo(
+    () => currentSession?.messages ?? [],
+    [currentSession?.messages]
+  );
+  
   const scrollToBottom = () => {
     if (scrollAreaRef.current) {
       // Radix ScrollArea viewport

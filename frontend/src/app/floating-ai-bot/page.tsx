@@ -125,8 +125,8 @@ export default function HomePage() {
             </div>
             <h3 className="text-xl font-semibold mb-4">Natural Conversation</h3>
             <p className="text-muted-foreground">
-              Chat naturally as if you're talking to a knowledgeable friend
-              who's always ready to help.
+              Chat naturally as if you&apos;re talking to a knowledgeable friend
+              who&apos;s always ready to help.
             </p>
           </Card>
 
@@ -157,7 +157,7 @@ export default function HomePage() {
             size="lg"
             className="px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
           >
-            Try It Now - It's Free
+            Try It Now - It&apos;s Free
             <Sparkles className="ml-2 h-5 w-5" />
           </Button>
         </Card>
