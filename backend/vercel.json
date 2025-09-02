@@ -4,12 +4,32 @@
     {
       "src": "app.py",
       "use": "@vercel/python"
+    },
+    {
+      "src": "quotes.py",
+      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
+      "src": "/api/chat",
       "dest": "app.py"
+    },
+    {
+      "src": "/api/messages",
+      "dest": "app.py"
+    },
+    {
+      "src": "/side_hustles",
+      "dest": "quotes.py"
+    },
+    {
+      "src": "/money_quotes",
+      "dest": "quotes.py"
+    },
+    {
+      "src": "/fakeinfo",
+      "dest": "quotes.py"
     }
   ]
 }
